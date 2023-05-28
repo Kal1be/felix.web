@@ -1,0 +1,473 @@
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: #92c3eeb7;
+    box-shadow: 0px -1px 0px #c5c5c6;
+    z-index: 1;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.nav-icon span{
+    font-family: roboto flex,sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 400;
+    color: #333;
+
+}
+.nav-icon img{
+    width: 40px;
+    transform: rotate(-17deg) translateX(5px);
+}
+.hamburger{
+    display: none;
+
+}
+.navlinks-container a {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #414141;
+    display: inline-block;
+    position: relative;
+}
+.navlinks-container a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+   transform: scaleX(0);
+   transform-origin: left;
+   background: #333;
+   transition:transform 0.3s ease-out;
+}
+.navlinks-container a:hover::after{
+    transform: scaleX(1);
+}
+.nav-authentication{
+    margin-left: auto;
+}
+.sign-btns button{
+    font-family: Roboto Flex,sans-serif;
+    font-size: 16px;
+    min-width: 90px;
+    padding: 10px 5px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.sign-btns button:nth-child(2){
+    border: none;
+    background: #92c3eeb7;
+}
+.sign-user{
+    display: none;
+}
+@media (max-width:900px) {
+    nav{
+        padding: 15px 20px;
+        position: relative;
+    }
+    .nav-icon{
+        order: 2;
+        margin: 0 auto;
+    }
+    .nav-icon span{
+        font-size: 22px;
+    }
+    .main-navlinks{
+        order: 1;
+
+    }
+    .hamburger{
+        width: 20px;
+        height: 20px;
+        cursor:pointer;
+        border: none;
+        display: flex;
+        background: #fafafa;
+        align-items: center;
+        position: relative;
+    }
+    .hamburger span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0.3s 0.15s ease-out;
+    }
+    .hamburger span:nth-child(1),
+    .hamburger span:nth-child(3){
+        transition: transform 0.3s ease-out;
+    }
+    
+    .hamburger span:nth-child(1){
+        transform: translateY(7px);
+    }
+    .hamburger span:nth-child(3){
+transform: translateY(-7px);
+    }
+    .hamburger .open span:nth-child(1){
+        transform: translate(0) rotate(135deg);
+
+    }
+    .hamburger .open span:nth-child(2){
+        opacity: 0;
+        transition: opacity
+        0s ease out;
+    }
+    .hamburger .open span:nth-child(3){
+        transform: translate(0) rotate(-135deg);
+    }
+    .navlinks-container {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       position: absolute;
+       background: #fafafa;
+       top: 100%;
+       left: 0;
+       height: 100vh;
+       border-right: 1px solid #c5c5c6;
+       transform: translate(-100%);
+       padding: 15px 50px 15px 20px;
+       transition: transform 0.3s ease-out;
+    }
+    .open{
+        transform: translate(0%);
+    }
+    .navlinks-container a{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .nav-authentication{
+        order: 3;
+        margin-left: 0;
+        margin-right: 14%;
+
+    }
+.sign-btns{
+    display: none;
+}
+.sign-user{
+    display: block;
+    cursor: pointer;
+    border-top: none;
+
+}
+.sign-user img{
+    width: 20px;
+}
+
+img{
+    width: 20px;
+}
+
+}
+@media(max-width:500px){
+    .nav-icon img{
+        width: 30px;
+    }
+    .nav-icon span{
+        font-size: 20px;
+    }
+}
+.david{
+    background-image: url('../img/hotel\ 2.jpg');
+}
+ @media(max-width:450px)
+ {
+    
+    .delta{
+    color: white;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 25px;
+    text-shadow: 2px 2px 3px black;
+
+}
+.adele{
+    display: flex;
+    margin-top: 23px;
+    padding: 0 4px;
+}
+.felix{
+    width: 32%;
+    height: 18%;
+    border-top-right-radius:40% ;
+    margin-top: 138px;
+    margin-left: 60px;
+    border-radius: 37%;
+    border:3px solid white;
+    box-shadow: 3px 2px 3px  gray;
+}
+.joseph{
+    font-size: 19px;
+    font-weight: 700;
+    color:white;
+    margin-top: 250px;
+    text-align: center;
+    margin-left:63px;
+    text-shadow: 2px 2px 2px black;
+}
+.marina{
+    margin-top: 13px;
+    font-size: 21px;
+    color: black;
+    font-weight: 800;
+    text-shadow: 2px 2px 3px red;
+}
+.bian{
+    display: flex;
+}
+.emile p{
+    font-size: 12px;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px yellow;
+    border: 2px solid black;
+    padding: 5px 12px;
+    border-radius: 12px;
+    margin-left: 13px;
+}
+.angel{
+    background-color:azure;
+}
+.allahnou{
+    background:darkgray;
+}
+.frida{
+    position:relative;
+   left: 50px;
+   background-color: cornsilk;
+}
+.div{
+    color: blue;
+    margin-left: 18px;
+}
+.sosthene{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+h4{
+    margin-top: 17px;
+    color: blue;
+    text-transform:capitalize ;
+    text-align: center;
+}
+.emmen p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 13px;
+    padding: 5px 13px;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 1px 1px red;
+    display:inline-block;
+    margin-left: 85px;
+    margin-bottom: 27px;
+}
+.papa{
+    display: flex;
+    vertical-align: middle;
+
+}
+.papa article{
+    border: 2px solid gray;
+    margin: 0 5px;
+    background: green;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.papa h1{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 25px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.papa h1:hover,
+.papa h1:active{
+    background-color: white;
+    color: green;
+}
+.papa h2{
+    font-size: 12px;
+    font-weight: 200;
+    margin-left: 23px;
+    color: whitesmoke;
+}
+.papa h3{
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 25px;
+    color: antiquewhite;
+}
+.papa ul li{
+    font-size: 11px;
+    font: 800;
+    margin-right: 40px;
+    list-style:circle;
+}
+.rice{
+    color: blue;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+    margin-bottom: 7px;
+}
+.papa div button{
+    width: 90%;
+    height: 4%;
+}
+.papa div button:hover,
+.papa div button:active{
+    background-color: white;
+    color: greenyellow;
+}
+.freeze{
+    background-image: url("../img/images\ \(5\).jpg");
+margin-top: 32px;
+
+} 
+.freeze h1{
+    color: blue;
+    font-size: 21px;
+    font-weight: 700;
+    margin-left: 24px;
+    text-shadow: 2px 2px 3px gray;
+    margin-top: 21px;
+}
+.tea{
+    display: flex;
+}
+.tea span{
+display: flex;
+width: 90px;
+height: 90px;
+border: 2px solid red;
+border-radius: 50%;
+margin:0 20px;
+background-color: #c5c5c6;
+box-shadow: 2px 2px 3px gray;
+}
+.tea span img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.alpha{
+    display: flex;
+}
+.alpha h1{
+color:green;
+font-size: 17px;
+font-weight: 700;
+text-shadow: 2px 2px 3px darkslategray;
+}
+.ori h1{
+    color: blue;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+    font-size: 19px;
+    font-weight: bold;
+}
+.ori form{
+    color:darkorange;
+    text-shadow: 2px 3px 2px white;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 14px;
+    padding: 5px 15px;
+    position: relative;
+    display:inline-block;
+    background-image: url(../img/download.jpg);
+    width: 45%;
+    height: 20%;
+    margin-left: 160px;
+}
+
+.ori form .pic:hover,
+.ori form .pic:active{
+    color: white;
+background-color: black;
+}
+
+.brice div h1{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 27px;
+
+}
+.brice div a{
+    list-style: none;
+    text-transform: none;
+    color: black;
+
+}
+.brice div p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 36px;
+    text-decoration: none;
+
+}
+.issa img{
+    width: 8%;
+    height: 4%;
+    border-radius: 50%;
+    margin-left: 35px;
+    border:2px solid gray;
+    box-shadow:2px 2px 3px black;
+}
+footer{
+    text-transform: capitalize;
+    text-align: center;
+    background: black;
+    color: white;
+}
+.lil{
+    border: 2px solid gray;
+    border-radius: 24px;
+    margin-left: 46px;
+    margin-top: 18px;
+    padding: 0 14px;
+    display: inline-block;
+    background-color: #fafafa;
+    box-shadow: 2px 3px 2px cornflowerblue;
+}
+.lil h1{
+color: blue;
+font-size: 21px;
+font-weight: 700;
+text-transform: capitalize;
+text-shadow: 2px 2px 2px coral;
+display: inline-block;
+background-color:palegoldenrod;
+padding: 8px 12px;
+border-radius: 19px;
+box-shadow: 2px 2px 3px brown;
+}
+}
+
+
